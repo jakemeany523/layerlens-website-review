@@ -97,11 +97,9 @@ section{padding:clamp(96px,9vw,132px) 0;position:relative;scroll-margin-top:80px
 .demo-figure .df-b{color:var(--text)}
 .demo-figure .df-cap{font-size:15px;font-weight:500;letter-spacing:normal;color:var(--text-3);align-self:center;margin-left:6px;max-width:22ch;line-height:1.35}
 
-/* ORIENTATION beat: three ways to prove your AI, each stands alone, each compounds. Environments leads (flagship). */
-/* Environments leads: a wider flagship column, evaluations and synthetic data beside it */
-.cap-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:14px;margin-top:46px;align-items:stretch}
+/* ORIENTATION beat: three co-equal capabilities, each stands alone, each compounds. */
+.cap-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:46px;align-items:stretch}
 .cap{display:flex;flex-direction:column;gap:13px;padding:24px 22px;border-radius:16px;border:1px solid var(--line-2);background:var(--surface);position:relative}
-.cap-env{border-color:rgba(165,180,252,.42);background:linear-gradient(180deg,rgba(165,180,252,.10),rgba(20,84,255,.03));box-shadow:0 20px 50px rgba(4,17,51,.30)}
 .cap-head{display:flex;align-items:center;gap:9px}
 .cap-dot{width:9px;height:9px;border-radius:50%;flex:0 0 auto}
 .cap-env .cap-dot{background:var(--env)}
@@ -125,7 +123,6 @@ section{padding:clamp(96px,9vw,132px) 0;position:relative;scroll-margin-top:80px
 .cap-chip::before{content:"";width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.6}
 .cap-note{margin-top:26px;font-size:16px;line-height:1.55;color:var(--text-2);text-align:center;max-width:64ch;margin-left:auto;margin-right:auto}
 .cap-note b{color:var(--text);font-weight:700}
-.cap-env .cap-t{font-size:18.5px}
 /* the three land in sequence on scroll, environment first */
 html.anim .cap-grid>.cap{opacity:0;transform:translateY(14px)}
 html.anim .cap-grid.play>.cap{opacity:1;transform:none;transition:opacity .55s var(--ease-enter),transform .55s var(--ease-enter)}
@@ -1243,8 +1240,8 @@ footer.site{border-top:1px solid var(--line);padding:52px 0 36px;background:var(
 </section>
 
 <!-- ================= 2.5 · ORIENTATION: three ways to prove your AI =================
-     Not three co-equal marketing pillars. Environments leads (the flagship / the moat); evaluations and
-     synthetic data are first-class capabilities that work standalone AND compound. Primes the walkthrough. -->
+     Three co-equal capabilities. Environments, evaluations, and synthetic data each work
+     standalone AND compound. Primes the walkthrough. -->
 <section class="orient" aria-labelledby="orient-h">
   <div class="wrap">
     <div class="rise">
@@ -1500,7 +1497,7 @@ footer.site{border-top:1px solid var(--line);padding:52px 0 36px;background:var(
 
 
 <!-- ================= 4 · EVALUATIONS: the grading spine, standalone =================
-     The environment is the flagship, but evaluations stand on their own: bring a model or benchmark and
+     Evaluations stand on their own: bring a model or benchmark and
      grade it without ever building an environment. Grounded in the Grader/Judge/Scorer family (product spine).
      No hard counts, the docs warn the numbers drift between decks. -->
 <section class="eval-sec" id="evalSec" aria-labelledby="eval-h">
